@@ -1,0 +1,40 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "this is just a test node app",
+  "main": "app.js",
+  "scripts": {
+    "start": "@powershell $env:DEBUG='*,-express:router*' ; nodemon app.js",
+    "test": "echo \" error: Error no test specified\" && exit 1",
+    "lint": "eslint app.js"
+  },
+  "author": "kshitiz baral",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "chalk": "^2.4.2",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "jquery": "^3.4.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "popper": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env":{
+      "PORT":4000,
+      "NODE_ENV": "dsevelopment"
+    }
+  }
+}

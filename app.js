@@ -17,13 +17,13 @@ app.use(
   '/js',
   express.static(path.join(__dirname, '/node_modules/bootstrap/dist/js')),
 );
-app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/js')));
+app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/dist')));
 
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('index', { list: ['a', 'b'], title: 'library' });
+  res.render('index', { list: ['a', 'b'], title: 'Library' });
 });
 
 app.listen(port, () => {

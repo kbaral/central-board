@@ -14,6 +14,7 @@
     "bootstrap": "^4.3.1",
     "chalk": "^2.4.2",
     "debug": "^4.1.1",
+    "ejs": "^2.6.2",
     "express": "^4.17.1",
     "g": "^2.0.1",
     "jquery": "^3.4.1",
@@ -32,8 +33,8 @@
       "node_modules/**/node_modules"
     ],
     "delay": "2500",
-    "env":{
-      "PORT":4000,
+    "env": {
+      "PORT": 4000,
       "NODE_ENV": "dsevelopment"
     }
   }
